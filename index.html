@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FOCCOS SCRIPT</title><meta name="description" content="FOCCOS SCRIPT: organize tarefas, acompanhe prazos e mantenha o foco nos estudos."><link rel="icon" type="image/png" href="logo-foccos.png"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><img class="brand-logo" src="logo-foccos.png" alt="Logo FOCCOS"><div><b>FOCCOS</b><small>SCRIPT</small></div></div>
+    <div class="nav-label">MENU PRINCIPAL</div>
+    <button class="nav active" data-page="dashboard">▦ <span>Dashboard</span></button>
+    <button class="nav" data-page="tasks">☷ <span>Minhas tarefas</span></button>
+    <button class="nav" data-page="platforms">▣ <span>Plataformas</span></button>
+    <button class="nav" data-page="calendar">▦ <span>Calendário</span></button>
+    <button class="nav" data-page="exams">✎ <span>Provas e simulados</span></button>
+    <button class="nav" data-page="admin">⚙ <span>Configurações</span></button>
+    <div class="sidebar-bottom"><div class="avatar">FS</div><div><b>Estudante</b><small>Meu espaço escolar</small></div></div>
+  </aside>
+  <main class="main">
+    <header><div><div class="eyebrow">SEU ESPAÇO DE ORGANIZAÇÃO</div><h1 id="pageTitle">Dashboard</h1></div><button class="primary" id="quickAdd">＋ Nova tarefa</button></header>
+    <section id="content"></section>
+    <footer>FOCCOS SCRIPT <span>Organize suas tarefas. Mantenha o foco.</span></footer>
+  </main>
+</div>
+<div class="modal hidden" id="taskModal"><form class="dialog" id="taskForm">
+  <div class="dialog-head"><h2 id="modalTitle">Nova tarefa</h2><button type="button" class="close" id="closeModal">×</button></div>
+  <input type="hidden" id="taskId">
+  <label>Nome da atividade<input id="taskName" required placeholder="Ex.: Atividade de matemática"></label>
+  <div class="two"><label>Plataforma<select id="taskPlatform"></select></label><label>Matéria<input id="taskSubject" placeholder="Ex.: Matemática"></label></div>
+  <div class="two"><label>Prazo<input id="taskDate" type="date"></label><label>Prioridade<select id="taskPriority"><option>Normal</option><option>Alta</option><option>Baixa</option></select></label></div>
+  <label>Descrição<textarea id="taskDescription" rows="3" placeholder="Detalhes (opcional)"></textarea></label>
+  <button class="primary full" type="submit">Salvar tarefa</button>
+</form></div>
+<div class="modal hidden" id="keyModal"><form class="dialog compact" id="keyForm">
+  <div class="dialog-head"><h2 id="keyTitle">Área protegida</h2><button type="button" class="close" id="closeKey">×</button></div>
+  <p>Digite a chave interna para abrir esta área.</p><label>Chave de acesso<input id="keyInput" type="password" required placeholder="Digite a chave"></label>
+  <p class="error" id="keyError"></p><button class="primary full">Desbloquear</button>
+</form></div>
+<script src="app.js"></script>
+</body></html>

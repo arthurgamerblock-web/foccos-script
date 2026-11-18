@@ -1,0 +1,23 @@
+FOCCOS SCRIPT - versão atualizada com a logo oficial
+
+Como testar:
+1. Extraia o ZIP.
+2. Abra a pasta FOCCOS_SCRIPT.
+3. Dê dois cliques em index.html.
+4. Cadastre tarefas e navegue pelo menu.
+
+O que já funciona:
+- Dashboard com resumo de tarefas e progresso.
+- Cadastro, edição, conclusão e exclusão de tarefas.
+- Calendário de prazos.
+- Atalhos para plataformas escolares.
+- Área de provas e um simulado demonstrativo.
+- Exportação e limpeza dos dados locais.
+- Logo FOCCOS aplicada no menu e como ícone da página.
+
+Importante:
+- Esta é uma versão local/front-end. As tarefas ficam salvas somente neste navegador.
+- As chaves internas são demonstrativas e NÃO oferecem segurança real.
+- Não coloque senhas escolares neste site.
+- Para publicar com contas de usuários, chaves privadas e dados sincronizados, será necessário criar um backend e autenticação segura.
+- Os links das plataformas abrem páginas externas; o site não realiza tarefas nem acessa contas escolares.
